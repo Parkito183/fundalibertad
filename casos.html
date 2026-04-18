@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Casos Activos — FundaLibertad A.C.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <div class="nav-logo">
+          <svg viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="18" stroke="#B5D4F4" stroke-width="1.5"/>
+            <path d="M12 26 L20 10 L28 26" stroke="#B5D4F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14.5 21 H25.5" stroke="#B5D4F4" stroke-width="1.5" stroke-linecap="round"/>
+            <rect x="17" y="26" width="6" height="3" rx="1" fill="#B5D4F4"/>
+            <circle cx="20" cy="7" r="2" fill="#378ADD"/>
+          </svg>
+        </div>
+        <span class="nav-name">FundaLibertad <em>A.C.</em></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="casos.html" class="nav-link active">Casos activos</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+        <a href="contacto.html" class="nav-cta">Reportar un caso</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero simple -->
+  <div class="page-hero">
+    <div class="container">
+      <span class="section-tag">Transparencia ante todo</span>
+      <h1 class="page-hero-title">Casos activos</h1>
+      <p class="page-hero-desc">Estas son las personas que actualmente acompañamos en su proceso legal. Tu donación va directo a su caso.</p>
+    </div>
+  </div>
+
+  <!-- CASOS COMPLETOS -->
+  <section class="section">
+    <div class="container">
+
+      <!-- CASO JUAN -->
+      <div class="case-detail" id="juan">
+        <div class="case-detail-header" style="background: linear-gradient(135deg,#1a5ea8,#0C447C);">
+          <svg class="case-detail-avatar" viewBox="0 0 100 100" fill="none">
+            <circle cx="50" cy="38" r="22" fill="rgba(255,255,255,0.9)"/>
+            <ellipse cx="50" cy="90" rx="34" ry="22" fill="rgba(255,255,255,0.9)"/>
+          </svg>
+          <div class="case-detail-info">
+            <span class="case-badge" style="margin-bottom:8px;">Prisión preventiva</span>
+            <h2>Juan Manuel Rodríguez</h2>
+            <p>34 años · Ciudad de México · En prisión desde hace 18 meses</p>
+          </div>
+        </div>
+        <div class="case-detail-body">
+          <div class="case-detail-text">
+            <h3>Situación jurídica</h3>
+            <p>Juan Manuel fue detenido en octubre de 2022 acusado de un delito del que afirma ser inocente. Desde entonces permanece en prisión preventiva sin que se haya dictado una sentencia firme. Su expediente presenta múltiples irregularidades procesales y existe evidencia de que la detención no se realizó conforme a la ley.</p>
+            <p>Su familia, de escasos recursos, no ha podido costear los honorarios de un abogado particular ni los trámites necesarios para interponer un recurso de apelación. El defensor de oficio asignado no ha dado seguimiento adecuado al caso.</p>
+            <h3 style="margin-top:1.2rem;">¿Para qué se usarán los fondos?</h3>
+            <ul class="fund-list">
+              <li>Honorarios de abogado penalista: $1,200</li>
+              <li>Copias certificadas del expediente: $150</li>
+              <li>Gastos de amparo (trámites): $400</li>
+              <li>Transporte y gestiones: $250</li>
+            </ul>
+          </div>
+          <div class="case-detail-donate">
+            <div class="donate-box">
+              <div class="progress-wrap" style="margin-bottom:1rem;">
+                <div class="progress-bar large"><div class="progress-fill" style="width:65%"></div></div>
+                <div class="progress-meta"><span>$1,300 recaudados</span><span><strong>Meta: $2,000</strong></span></div>
+              </div>
+              <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:1.2rem;">Selecciona un método de donación:</p>
+              <div class="donate-methods">
+                <a href="https://paypal.me/fundalibertad?amount=50" target="_blank" class="method-btn">
+                  <svg viewBox="0 0 20 20" fill="none" width="18"><rect width="20" height="20" rx="5" fill="#003087"/><path d="M12 4H8a.5.5 0 00-.5.43L6 13h2l.5-2.5H10c1.8 0 3-1 3.3-2.7.3-1.3-.3-3.8-1.3-3.8z" fill="#009CDE"/></svg>
+                  PayPal
+                </a>
+                <button class="method-btn" onclick="copyClabe()">
+                  <svg viewBox="0 0 20 20" fill="none" width="18"><rect width="20" height="20" rx="5" fill="#E6F1FB"/><path d="M4 9h12M10 5l6 4H4l6-4zM5 9v5M10 9v5M15 9v5M4 14h12" stroke="#185FA5" stroke-width="1.2" stroke-linecap="round"/></svg>
+                  Transferencia
+                </button>
+                <button class="method-btn" onclick="copyBTC()">
+                  <svg viewBox="0 0 20 20" fill="none" width="18"><rect width="20" height="20" rx="5" fill="#FFF3E0"/><path d="M11 5c1.5.3 2.5 1 2.3 2.5-.1 1-.8 1.5-1.5 1.8 1 .2 1.8 1 1.5 2.5-.4 1.7-1.8 2.2-3.5 2.2H6.5L8 5h3z" stroke="#F7931A" stroke-width="1" stroke-linejoin="round"/></svg>
+                  Bitcoin
+                </button>
+                <button class="method-btn" onclick="copyETH()">
+                  <svg viewBox="0 0 20 20" fill="none" width="18"><rect width="20" height="20" rx="5" fill="#EEF0FF"/><path d="M10 4L14 10.5L10 12.5L6 10.5Z" stroke="#627EEA" stroke-width="1.2" stroke-linejoin="round"/><path d="M10 12.5L14 10.5L10 16L6 10.5Z" stroke="#627EEA" stroke-width="1.2" stroke-linejoin="round"/></svg>
+                  ETH / USDT
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CASO MARÍA -->
+      <div class="case-detail" id="maria">
+        <div class="case-detail-header" style="background: linear-gradient(135deg,#0F6E56,#085041);">
+          <svg class="case-detail-avatar" viewBox="0 0 100 100" fill="none">
+            <circle cx="50" cy="38" r="22" fill="rgba(255,255,255,0.9)"/>
+            <ellipse cx="50" cy="90" rx="34" ry="22" fill="rgba(255,255,255,0.9)"/>
+          </svg>
+          <div class="case-detail-info">
+            <span class="case-badge" style="margin-bottom:8px;">Apelación pendiente</span>
+            <h2>María Luisa Contreras</h2>
+            <p>28 años · Jalisco · Proceso irregular desde hace 9 meses</p>
+          </div>
+        </div>
+        <div class="case-detail-body">
+          <div class="case-detail-text">
+            <h3>Situación jurídica</h3>
+            <p>María Luisa fue condenada en primer grado en un juicio que presentó graves irregularidades procesales: ausencia de testigos clave, pruebas mal integradas al expediente y falta de notificación oportuna. Ella y su familia están convencidos de su inocencia y buscan revertir la condena mediante un recurso de apelación.</p>
+            <p>La falta de recursos económicos ha impedido que acceda a una representación legal adecuada. El recurso ya está redactado por abogados voluntarios de la fundación, pero se requieren fondos para los trámites judiciales, peritajes y honorarios de seguimiento.</p>
+            <h3 style="margin-top:1.2rem;">¿Para qué se usarán los fondos?</h3>
+            <ul class="fund-list">
+              <li>Honorarios de abogado en apelación: $900</li>
+              <li>Peritaje psicológico: $400</li>
+              <li>Trámites y copias certificadas: $300</li>
+              <li>Gastos de gestión: $400</li>
+            </ul>
+          </div>
+          <div class="case-detail-donate">
+            <div class="donate-box">
+              <div class="progress-wrap" style="margin-bottom:1rem;">
+                <div class="progress-bar large"><div class="progress-fill" style="width:30%; background:var(--green)"></div></div>
+                <div class="progress-meta"><span>$600 recaudados</span><span><strong>Meta: $2,000</strong></span></div>
+              </div>
+              <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:1.2rem; color:#B22222; font-weight:500;">⚠ Urgente — solo 30% alcanzado</p>
+              <div class="donate-methods">
+                <a href="https://paypal.me/fundalibertad?amount=50" target="_blank" class="method-btn">PayPal</a>
+                <button class="method-btn" onclick="copyClabe()">Transferencia</button>
+                <button class="method-btn" onclick="copyBTC()">Bitcoin</button>
+                <button class="method-btn" onclick="copyETH()">ETH / USDT</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CASO CARLOS -->
+      <div class="case-detail" id="carlos">
+        <div class="case-detail-header" style="background: linear-gradient(135deg,#534AB7,#26215C);">
+          <svg class="case-detail-avatar" viewBox="0 0 100 100" fill="none">
+            <circle cx="50" cy="38" r="22" fill="rgba(255,255,255,0.9)"/>
+            <ellipse cx="50" cy="90" rx="34" ry="22" fill="rgba(255,255,255,0.9)"/>
+          </svg>
+          <div class="case-detail-info">
+            <span class="case-badge" style="margin-bottom:8px;">Amparo directo</span>
+            <h2>Carlos Roberto Estrada</h2>
+            <p>45 años · Veracruz · Detención sin justificación legal</p>
+          </div>
+        </div>
+        <div class="case-detail-body">
+          <div class="case-detail-text">
+            <h3>Situación jurídica</h3>
+            <p>Carlos Roberto lleva más de un año detenido de forma que sus abogados califican como inconstitucional. El juicio de amparo directo es la vía idónea para obtener su liberación inmediata, ya que la detención no cumplió con los requisitos legales establecidos en la constitución.</p>
+            <p>Gracias al apoyo de donantes anteriores, el caso está muy cerca de completar los fondos necesarios. Con el 82% del objetivo alcanzado, cualquier aportación puede ser la que marque la diferencia para que Carlos regrese a casa con su familia.</p>
+            <h3 style="margin-top:1.2rem;">¿Para qué se usarán los fondos?</h3>
+            <ul class="fund-list">
+              <li>Trámites del juicio de amparo: $800</li>
+              <li>Honorarios de seguimiento: $600</li>
+              <li>Notaría y certificaciones: $240</li>
+              <li>Gastos varios: $360</li>
+            </ul>
+          </div>
+          <div class="case-detail-donate">
+            <div class="donate-box">
+              <div class="progress-wrap" style="margin-bottom:1rem;">
+                <div class="progress-bar large"><div class="progress-fill" style="width:82%; background:var(--purple)"></div></div>
+                <div class="progress-meta"><span>$1,640 recaudados</span><span><strong>Meta: $2,000</strong></span></div>
+              </div>
+              <p style="font-size:0.85rem; color:#0F6E56; font-weight:500; margin-bottom:1.2rem;">¡Casi llegamos! Solo faltan $360</p>
+              <div class="donate-methods">
+                <a href="https://paypal.me/fundalibertad?amount=50" target="_blank" class="method-btn">PayPal</a>
+                <button class="method-btn" onclick="copyClabe()">Transferencia</button>
+                <button class="method-btn" onclick="copyBTC()">Bitcoin</button>
+                <button class="method-btn" onclick="copyETH()">ETH / USDT</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="nav-logo" style="width:36px;height:36px;">
+          <svg viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="18" stroke="#378ADD" stroke-width="1.5"/>
+            <path d="M12 26 L20 10 L28 26" stroke="#378ADD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14.5 21 H25.5" stroke="#378ADD" stroke-width="1.5" stroke-linecap="round"/>
+            <rect x="17" y="26" width="6" height="3" rx="1" fill="#378ADD"/>
+          </svg>
+        </div>
+        <div>
+          <p class="footer-name">FundaLibertad A.C.</p>
+          <p class="footer-slogan">Justicia para quienes no tienen voz</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="casos.html">Casos activos</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <p class="footer-copy">© 2025 FundaLibertad A.C. — Asociación Civil sin fines de lucro.</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast">¡Copiado al portapapeles!</div>
+
+  <script>
+    document.getElementById('navToggle').addEventListener('click', () =>
+      document.getElementById('navLinks').classList.toggle('open'));
+    function showToast() {
+      const t = document.getElementById('toast');
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 2200);
+    }
+    function copyClabe() { navigator.clipboard.writeText('012180012345678901'); showToast(); }
+    function copyBTC()   { navigator.clipboard.writeText('bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh'); showToast(); }
+    function copyETH()   { navigator.clipboard.writeText('0x71C7656EC7ab88b098defB751B7401B5f6d8976F'); showToast(); }
+  </script>
+</body>
+</html>

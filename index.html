@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FundaLibertad A.C. — Justicia para quienes no tienen voz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">
+        <div class="nav-logo">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="20" cy="20" r="18" stroke="#B5D4F4" stroke-width="1.5"/>
+            <path d="M12 26 L20 10 L28 26" stroke="#B5D4F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14.5 21 H25.5" stroke="#B5D4F4" stroke-width="1.5" stroke-linecap="round"/>
+            <rect x="17" y="26" width="6" height="3" rx="1" fill="#B5D4F4"/>
+            <circle cx="20" cy="7" r="2" fill="#378ADD"/>
+          </svg>
+        </div>
+        <span class="nav-name">FundaLibertad <em>A.C.</em></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="nav-link active">Inicio</a>
+        <a href="casos.html" class="nav-link">Casos activos</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+        <a href="contacto.html" class="nav-cta">Reportar un caso</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-content">
+      <span class="hero-tag">Asociación Civil · Sin fines de lucro</span>
+      <h1 class="hero-title">Justicia para quienes<br/><span class="hero-accent">no tienen voz</span></h1>
+      <p class="hero-desc">Recaudamos fondos y brindamos representación legal gratuita a personas privadas de libertad que carecen de recursos económicos para enfrentar su proceso judicial. Cada donación puede cambiar una vida.</p>
+      <div class="hero-actions">
+        <a href="casos.html" class="btn-primary">Ver casos activos</a>
+        <a href="contacto.html" class="btn-outline">Reportar un caso</a>
+      </div>
+    </div>
+    <div class="hero-stats">
+      <div class="stat-item">
+        <span class="stat-number">47</span>
+        <span class="stat-label">Personas liberadas</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item">
+        <span class="stat-number">12</span>
+        <span class="stat-label">Casos activos</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item">
+        <span class="stat-number">$284k</span>
+        <span class="stat-label">Fondos recaudados</span>
+      </div>
+      <div class="stat-sep"></div>
+      <div class="stat-item">
+        <span class="stat-number">6</span>
+        <span class="stat-label">Años de trabajo</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUIÉNES SOMOS ===== -->
+  <section class="about section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="section-tag">¿Quiénes somos?</span>
+          <h2 class="section-title">Una causa que nace de la injusticia</h2>
+          <p>En México y gran parte de Latinoamérica, miles de personas permanecen privadas de su libertad no porque sean culpables, sino porque no cuentan con los recursos económicos necesarios para costear un abogado, pagar una fianza o simplemente llevar a cabo su proceso legal de manera adecuada.</p>
+          <p>FundaLibertad A.C. nació en 2019 con una misión clara: que el dinero no sea el obstáculo entre una persona y su libertad. A través de la recaudación de fondos, la vinculación con abogados voluntarios y la presión ciudadana, iniciamos y acompañamos procesos legales hasta lograr la liberación o el juicio justo que cada persona merece.</p>
+          <a href="contacto.html" class="btn-primary" style="margin-top:1.2rem; display:inline-block;">Ponerse en contacto</a>
+        </div>
+        <div class="about-visual">
+          <div class="about-card">
+            <div class="about-icon">
+              <svg viewBox="0 0 48 48" fill="none">
+                <rect width="48" height="48" rx="12" fill="#E6F1FB"/>
+                <path d="M24 10 L36 18 V30 L24 38 L12 30 V18 Z" stroke="#185FA5" stroke-width="2" fill="none" stroke-linejoin="round"/>
+                <path d="M24 18 V26 M24 30 V32" stroke="#185FA5" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Transparencia total</h3>
+            <p>Cada donación es rastreada y reportada. Publicamos informes mensuales del uso de los fondos.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon">
+              <svg viewBox="0 0 48 48" fill="none">
+                <rect width="48" height="48" rx="12" fill="#E6F1FB"/>
+                <circle cx="24" cy="18" r="6" stroke="#185FA5" stroke-width="2"/>
+                <path d="M14 38 C14 32 34 32 34 38" stroke="#185FA5" stroke-width="2" stroke-linecap="round"/>
+                <path d="M32 12 L40 10 M32 18 L40 18 M32 24 L40 26" stroke="#185FA5" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Abogados comprometidos</h3>
+            <p>Red de más de 30 abogados voluntarios especializados en derecho penal y amparo.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-icon">
+              <svg viewBox="0 0 48 48" fill="none">
+                <rect width="48" height="48" rx="12" fill="#E6F1FB"/>
+                <path d="M16 34 L24 14 L32 34" stroke="#185FA5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M19 27 H29" stroke="#185FA5" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Proceso legal completo</h3>
+            <p>Desde la revisión del expediente hasta la apelación o amparo, acompañamos cada etapa.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CASOS DESTACADOS ===== -->
+  <section class="cases section" style="background: var(--bg-soft);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Casos activos</span>
+        <h2 class="section-title">Personas que necesitan tu ayuda hoy</h2>
+        <p class="section-desc">Cada caso representa una historia real. Tu donación financia directamente el proceso legal de estas personas.</p>
+      </div>
+      <div class="cases-grid">
+
+        <!-- Caso 1 -->
+        <div class="case-card">
+          <div class="case-img" style="background: linear-gradient(135deg,#B5D4F4,#378ADD);">
+            <svg class="case-avatar" viewBox="0 0 80 80" fill="none">
+              <circle cx="40" cy="30" r="16" fill="rgba(255,255,255,0.9)"/>
+              <ellipse cx="40" cy="70" rx="24" ry="16" fill="rgba(255,255,255,0.9)"/>
+            </svg>
+            <span class="case-badge">Prisión preventiva</span>
+          </div>
+          <div class="case-body">
+            <div class="case-meta">
+              <strong>Juan Manuel R.</strong>
+              <span>34 años · CDMX</span>
+            </div>
+            <p class="case-desc-text">Detenido hace 18 meses sin sentencia firme. Acusado sin pruebas suficientes. Su familia no puede costear el proceso de apelación.</p>
+            <div class="progress-wrap">
+              <div class="progress-bar"><div class="progress-fill" style="width:65%"></div></div>
+              <div class="progress-meta"><span>$1,300 recaudados</span><span>Meta: $2,000</span></div>
+            </div>
+            <a href="casos.html#juan" class="btn-donate">Donar a Juan Manuel</a>
+          </div>
+        </div>
+
+        <!-- Caso 2 -->
+        <div class="case-card">
+          <div class="case-img" style="background: linear-gradient(135deg,#9FE1CB,#0F6E56);">
+            <svg class="case-avatar" viewBox="0 0 80 80" fill="none">
+              <circle cx="40" cy="30" r="16" fill="rgba(255,255,255,0.9)"/>
+              <ellipse cx="40" cy="70" rx="24" ry="16" fill="rgba(255,255,255,0.9)"/>
+            </svg>
+            <span class="case-badge">Apelación pendiente</span>
+          </div>
+          <div class="case-body">
+            <div class="case-meta">
+              <strong>María Luisa C.</strong>
+              <span>28 años · Jalisco</span>
+            </div>
+            <p class="case-desc-text">Condenada en primer grado con un proceso que presentó irregularidades graves. Lleva 9 meses esperando que su recurso sea atendido.</p>
+            <div class="progress-wrap">
+              <div class="progress-bar"><div class="progress-fill" style="width:30%; background:var(--green)"></div></div>
+              <div class="progress-meta"><span>$600 recaudados</span><span>Meta: $2,000</span></div>
+            </div>
+            <a href="casos.html#maria" class="btn-donate">Donar a María Luisa</a>
+          </div>
+        </div>
+
+        <!-- Caso 3 -->
+        <div class="case-card">
+          <div class="case-img" style="background: linear-gradient(135deg,#CECBF6,#534AB7);">
+            <svg class="case-avatar" viewBox="0 0 80 80" fill="none">
+              <circle cx="40" cy="30" r="16" fill="rgba(255,255,255,0.9)"/>
+              <ellipse cx="40" cy="70" rx="24" ry="16" fill="rgba(255,255,255,0.9)"/>
+            </svg>
+            <span class="case-badge">Amparo directo</span>
+          </div>
+          <div class="case-body">
+            <div class="case-meta">
+              <strong>Carlos Roberto E.</strong>
+              <span>45 años · Veracruz</span>
+            </div>
+            <p class="case-desc-text">Detenido de manera injustificada. El juicio de amparo puede ordenar su libertad inmediata pero requiere financiamiento urgente para los trámites.</p>
+            <div class="progress-wrap">
+              <div class="progress-bar"><div class="progress-fill" style="width:82%; background:var(--purple)"></div></div>
+              <div class="progress-meta"><span>$1,640 recaudados</span><span>Meta: $2,000</span></div>
+            </div>
+            <a href="casos.html#carlos" class="btn-donate">Donar a Carlos Roberto</a>
+          </div>
+        </div>
+
+      </div>
+      <div style="text-align:center; margin-top:2.5rem;">
+        <a href="casos.html" class="btn-outline">Ver todos los casos activos →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CÓMO DONAR ===== -->
+  <section class="donate section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Apoya la causa</span>
+        <h2 class="section-title">Múltiples formas de donar</h2>
+        <p class="section-desc">Elige el método que más te convenga. Todas las donaciones son seguras y se destinan íntegramente a los procesos legales.</p>
+      </div>
+      <div class="donate-grid">
+
+        <div class="donate-card">
+          <div class="donate-icon paypal-icon">
+            <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#003087"/><path d="M25.5 12H17a1 1 0 00-1 .85L13.5 27h3.5l.7-4.5h3.8c3.2 0 5.5-1.6 6.2-4.8.5-2.3-.5-5.7-2.2-5.7z" fill="#009CDE"/><path d="M23 15.5H18l-1 6.5h2.8l.3-2h1.9c2.2 0 3.7-1.1 4.1-3.1.4-1.5-.4-3.7-3.1-1.4z" fill="#fff"/></svg>
+          </div>
+          <h3>PayPal</h3>
+          <p>Donación rápida y segura con tu cuenta PayPal o tarjeta.</p>
+          <a href="https://paypal.me/fundalibertad" target="_blank" class="btn-donate-sm">Donar con PayPal</a>
+        </div>
+
+        <div class="donate-card">
+          <div class="donate-icon bank-icon">
+            <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#E6F1FB"/><path d="M8 18h24M20 10l12 8H8l12-8zM10 18v10M20 18v10M30 18v10M8 28h24" stroke="#185FA5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Transferencia bancaria</h3>
+          <p>BBVA · CLABE: 012 180 0123456789 01<br/>Titular: FundaLibertad A.C.</p>
+          <button class="btn-donate-sm" onclick="copyClabe()">Copiar CLABE</button>
+        </div>
+
+        <div class="donate-card">
+          <div class="donate-icon btc-icon">
+            <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#F7931A" fill-opacity="0.12"/><path d="M22 10c3 .5 5 2 4.5 5-.2 2-1.5 3-3 3.5 2 .5 3.5 2 3 5-.7 3.5-3.5 4.5-7 4.5H13L16 10h6z" stroke="#F7931A" stroke-width="1.8" stroke-linejoin="round"/><path d="M18 14h3M17.5 21h3.5M17 27h3" stroke="#F7931A" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Bitcoin (BTC)</h3>
+          <p style="font-size:0.78rem; word-break:break-all; color:var(--text-muted);">bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh</p>
+          <button class="btn-donate-sm" onclick="copyBTC()">Copiar dirección BTC</button>
+        </div>
+
+        <div class="donate-card">
+          <div class="donate-icon eth-icon">
+            <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#627EEA" fill-opacity="0.12"/><path d="M20 8 L28 21 L20 25 L12 21 Z" stroke="#627EEA" stroke-width="1.8" stroke-linejoin="round"/><path d="M20 25 L28 21 L20 32 L12 21 Z" stroke="#627EEA" stroke-width="1.8" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Ethereum / USDT</h3>
+          <p style="font-size:0.78rem; word-break:break-all; color:var(--text-muted);">0x71C7656EC7ab88b098defB751B7401B5f6d8976F</p>
+          <button class="btn-donate-sm" onclick="copyETH()">Copiar dirección ETH</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <div class="nav-logo" style="width:36px;height:36px;">
+          <svg viewBox="0 0 40 40" fill="none">
+            <circle cx="20" cy="20" r="18" stroke="#378ADD" stroke-width="1.5"/>
+            <path d="M12 26 L20 10 L28 26" stroke="#378ADD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14.5 21 H25.5" stroke="#378ADD" stroke-width="1.5" stroke-linecap="round"/>
+            <rect x="17" y="26" width="6" height="3" rx="1" fill="#378ADD"/>
+          </svg>
+        </div>
+        <div>
+          <p class="footer-name">FundaLibertad A.C.</p>
+          <p class="footer-slogan">Justicia para quienes no tienen voz</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Inicio</a>
+        <a href="casos.html">Casos activos</a>
+        <a href="contacto.html">Contacto</a>
+      </div>
+      <p class="footer-copy">© 2025 FundaLibertad A.C. — Asociación Civil sin fines de lucro. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div class="toast" id="toast">¡Copiado al portapapeles!</div>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links  = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => links.classList.toggle('open'));
+
+    function showToast() {
+      const t = document.getElementById('toast');
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 2200);
+    }
+    function copyClabe() { navigator.clipboard.writeText('012180012345678901'); showToast(); }
+    function copyBTC()   { navigator.clipboard.writeText('bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh'); showToast(); }
+    function copyETH()   { navigator.clipboard.writeText('0x71C7656EC7ab88b098defB751B7401B5f6d8976F'); showToast(); }
+  </script>
+</body>
+</html>
