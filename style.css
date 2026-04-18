@@ -470,15 +470,19 @@ ul { list-style: none; }
 .case-avatar { width: 70px; height: 70px; opacity: 0.9; }
 
 .case-badge {
-  position: absolute;
-  bottom: 10px;
-  left: 12px;
+  display: inline-block;
   background: rgba(0,0,0,0.45);
   color: #fff;
   font-size: 0.72rem;
   font-weight: 500;
   padding: 3px 10px;
   border-radius: 99px;
+}
+
+.case-img .case-badge {
+  position: absolute;
+  bottom: 10px;
+  left: 12px;
   backdrop-filter: blur(4px);
 }
 
