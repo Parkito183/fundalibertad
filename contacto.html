@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contacto — FundaLibertad A.C.</title>
+  <!-- TÍTULO DE PESTAÑA -->
+  <title>Contacto — La Libertad es un Derecho</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -14,16 +15,20 @@
   <header class="navbar">
     <div class="nav-inner">
       <a href="index.html" class="nav-brand">
+        <!-- LOGO: Pájaro con alas abiertas -->
         <div class="nav-logo">
-          <svg viewBox="0 0 40 40" fill="none">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="20" cy="20" r="18" stroke="#B5D4F4" stroke-width="1.5"/>
-            <path d="M12 26 L20 10 L28 26" stroke="#B5D4F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M14.5 21 H25.5" stroke="#B5D4F4" stroke-width="1.5" stroke-linecap="round"/>
-            <rect x="17" y="26" width="6" height="3" rx="1" fill="#B5D4F4"/>
-            <circle cx="20" cy="7" r="2" fill="#378ADD"/>
+            <path d="M6 23 Q12 14 20 20" stroke="#B5D4F4" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <path d="M34 23 Q28 14 20 20" stroke="#B5D4F4" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <path d="M20 20 Q19.5 25 20 30" stroke="#378ADD" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="20" cy="16.5" r="2.8" fill="#378ADD"/>
+            <path d="M22 16 L24.5 15.5" stroke="#B5D4F4" stroke-width="1.2" stroke-linecap="round"/>
+            <circle cx="20" cy="7" r="1.5" fill="#378ADD" opacity="0.7"/>
           </svg>
         </div>
-        <span class="nav-name">FundaLibertad <em>A.C.</em></span>
+        <!-- NOMBRE NAVBAR -->
+        <span class="nav-name">La Libertad <em>es un Derecho</em></span>
       </a>
       <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
         <span></span><span></span><span></span>
@@ -40,6 +45,7 @@
   <div class="page-hero">
     <div class="container">
       <span class="section-tag">Estamos para ayudarte</span>
+      <!-- TÍTULO Y DESCRIPCIÓN DE LA PÁGINA: edita si lo necesitas -->
       <h1 class="page-hero-title">Contáctanos</h1>
       <p class="page-hero-desc">¿Tienes un caso que necesita atención? ¿Quieres unirte como voluntario o donar? Escríbenos y te respondemos en menos de 48 horas.</p>
     </div>
@@ -49,16 +55,17 @@
     <div class="container">
       <div class="contact-grid">
 
-        <!-- FORMULARIO -->
+        <!-- FORMULARIO DE CONTACTO -->
         <div class="contact-form-wrap">
           <h2 style="font-family:'Playfair Display',serif; font-size:1.5rem; margin-bottom:1.5rem; color:var(--blue-dark);">Envíanos un mensaje</h2>
 
-          <!-- Mensaje de éxito -->
+          <!-- Mensaje de éxito (se muestra al enviar correctamente) -->
           <div class="success-msg" id="successMsg">
             <svg viewBox="0 0 24 24" fill="none" width="28"><circle cx="12" cy="12" r="10" fill="#E1F5EE"/><path d="M8 12l3 3 5-5" stroke="#0F6E56" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <div>
               <strong>Mensaje enviado correctamente</strong>
-              <p>Nos pondremos en contacto contigo pronto. Gracias por comunicarte con FundaLibertad A.C.</p>
+              <!-- MENSAJE DE CONFIRMACIÓN: edita el texto -->
+              <p>Nos pondremos en contacto contigo pronto. Gracias por comunicarte con La Libertad es un Derecho.</p>
             </div>
           </div>
 
@@ -82,6 +89,7 @@
               <span class="form-error" id="err-email">Ingresa un correo electrónico válido.</span>
             </div>
 
+            <!-- MOTIVOS DE CONTACTO: agrega o elimina opciones según necesites -->
             <div class="form-group">
               <label>Motivo de contacto *</label>
               <div class="motivo-grid">
@@ -130,20 +138,22 @@
           </form>
         </div>
 
-        <!-- INFO DE CONTACTO -->
+        <!-- INFORMACIÓN DE CONTACTO DIRECTA -->
         <div class="contact-info">
           <h2 style="font-family:'Playfair Display',serif; font-size:1.5rem; margin-bottom:1.5rem; color:var(--blue-dark);">Canales directos</h2>
 
+          <!-- EMAIL: cambia el href y el texto visible -->
           <div class="info-card">
             <div class="info-icon">
               <svg viewBox="0 0 24 24" fill="none" width="22"><path d="M4 4h16a2 2 0 012 2v12a2 2 0 01-2 2H4a2 2 0 01-2-2V6a2 2 0 012-2z" stroke="#185FA5" stroke-width="1.8"/><path d="M22 6l-10 7L2 6" stroke="#185FA5" stroke-width="1.8"/></svg>
             </div>
             <div>
               <p class="info-label">Correo electrónico</p>
-              <a href="mailto:contacto@fundalibertad.org" class="info-value">contacto@fundalibertad.org</a>
+              <a href="mailto:contacto@lalibertadesunderecho.org" class="info-value">contacto@lalibertadesunderecho.org</a>
             </div>
           </div>
 
+          <!-- WHATSAPP: cambia el número en href (formato internacional sin +) y el texto -->
           <div class="info-card">
             <div class="info-icon">
               <svg viewBox="0 0 24 24" fill="none" width="22"><path d="M22 16.92v3a2 2 0 01-2.18 2A19.79 19.79 0 013.07 5.17 2 2 0 015.06 3h3a2 2 0 012 1.72c.12.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L9.09 10.9a16 16 0 006.99 7l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0122 16.92z" stroke="#185FA5" stroke-width="1.8"/></svg>
@@ -154,27 +164,29 @@
             </div>
           </div>
 
+          <!-- INSTAGRAM: cambia el href y el texto del usuario -->
           <div class="info-card">
             <div class="info-icon">
               <svg viewBox="0 0 24 24" fill="none" width="22"><rect x="2" y="2" width="20" height="20" rx="5" stroke="#185FA5" stroke-width="1.8"/><circle cx="12" cy="12" r="4" stroke="#185FA5" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1" fill="#185FA5"/></svg>
             </div>
             <div>
               <p class="info-label">Instagram</p>
-              <a href="https://instagram.com/fundalibertad" target="_blank" class="info-value">@fundalibertad</a>
+              <a href="https://instagram.com/lalibertadesunderecho" target="_blank" class="info-value">@lalibertadesunderecho</a>
             </div>
           </div>
 
+          <!-- FACEBOOK: cambia el href y el nombre de página -->
           <div class="info-card">
             <div class="info-icon">
               <svg viewBox="0 0 24 24" fill="none" width="22"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" stroke="#185FA5" stroke-width="1.8" stroke-linejoin="round"/></svg>
             </div>
             <div>
               <p class="info-label">Facebook</p>
-              <a href="https://facebook.com/fundalibertad" target="_blank" class="info-value">FundaLibertad A.C.</a>
+              <a href="https://facebook.com/lalibertadesunderecho" target="_blank" class="info-value">La Libertad es un Derecho</a>
             </div>
           </div>
 
-          <!-- Aviso confidencialidad -->
+          <!-- NOTA DE CONFIDENCIALIDAD: edita si lo necesitas -->
           <div class="confidential-note">
             <svg viewBox="0 0 24 24" fill="none" width="20"><rect x="3" y="11" width="18" height="11" rx="2" stroke="#185FA5" stroke-width="1.8"/><path d="M7 11V7a5 5 0 0110 0v4" stroke="#185FA5" stroke-width="1.8" stroke-linecap="round"/></svg>
             <p>Toda la información que compartas con nosotros es tratada con estricta <strong>confidencialidad</strong>. Nunca divulgaremos datos personales sin tu autorización expresa.</p>
@@ -191,13 +203,16 @@
         <div class="nav-logo" style="width:36px;height:36px;">
           <svg viewBox="0 0 40 40" fill="none">
             <circle cx="20" cy="20" r="18" stroke="#378ADD" stroke-width="1.5"/>
-            <path d="M12 26 L20 10 L28 26" stroke="#378ADD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M14.5 21 H25.5" stroke="#378ADD" stroke-width="1.5" stroke-linecap="round"/>
-            <rect x="17" y="26" width="6" height="3" rx="1" fill="#378ADD"/>
+            <path d="M6 23 Q12 14 20 20" stroke="#378ADD" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <path d="M34 23 Q28 14 20 20" stroke="#378ADD" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <path d="M20 20 Q19.5 25 20 30" stroke="#85B7EB" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="20" cy="16.5" r="2.8" fill="#85B7EB"/>
+            <path d="M22 16 L24.5 15.5" stroke="#378ADD" stroke-width="1.2" stroke-linecap="round"/>
+            <circle cx="20" cy="7" r="1.5" fill="#85B7EB" opacity="0.7"/>
           </svg>
         </div>
         <div>
-          <p class="footer-name">FundaLibertad A.C.</p>
+          <p class="footer-name">La Libertad es un Derecho</p>
           <p class="footer-slogan">Justicia para quienes no tienen voz</p>
         </div>
       </div>
@@ -206,7 +221,7 @@
         <a href="casos.html">Casos activos</a>
         <a href="contacto.html">Contacto</a>
       </div>
-      <p class="footer-copy">© 2025 FundaLibertad A.C. — Asociación Civil sin fines de lucro.</p>
+      <p class="footer-copy">© 2025 La Libertad es un Derecho — Asociación Civil sin fines de lucro.</p>
     </div>
   </footer>
 
@@ -218,31 +233,21 @@
       e.preventDefault();
       let valid = true;
 
-      const nombre = document.getElementById('nombre');
-      const telefono = document.getElementById('telefono');
-      const email = document.getElementById('email');
-      const mensaje = document.getElementById('mensaje');
+      const nombre    = document.getElementById('nombre');
+      const telefono  = document.getElementById('telefono');
+      const email     = document.getElementById('email');
+      const mensaje   = document.getElementById('mensaje');
       const privacidad = document.getElementById('privacidad');
 
       [nombre, telefono, email, mensaje].forEach(f => f.classList.remove('error'));
       document.getElementById('err-privacidad').style.display = 'none';
 
-      if (!nombre.value.trim() || nombre.value.trim().length < 3) {
-        nombre.classList.add('error'); valid = false;
-      }
-      if (!telefono.value.trim() || telefono.value.trim().length < 7) {
-        telefono.classList.add('error'); valid = false;
-      }
+      if (!nombre.value.trim() || nombre.value.trim().length < 3)   { nombre.classList.add('error');   valid = false; }
+      if (!telefono.value.trim() || telefono.value.trim().length < 7) { telefono.classList.add('error'); valid = false; }
       const emailRx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailRx.test(email.value.trim())) {
-        email.classList.add('error'); valid = false;
-      }
-      if (!mensaje.value.trim() || mensaje.value.trim().length < 20) {
-        mensaje.classList.add('error'); valid = false;
-      }
-      if (!privacidad.checked) {
-        document.getElementById('err-privacidad').style.display = 'block'; valid = false;
-      }
+      if (!emailRx.test(email.value.trim()))                         { email.classList.add('error');    valid = false; }
+      if (!mensaje.value.trim() || mensaje.value.trim().length < 20) { mensaje.classList.add('error');  valid = false; }
+      if (!privacidad.checked) { document.getElementById('err-privacidad').style.display = 'block'; valid = false; }
 
       if (valid) {
         document.getElementById('contactForm').style.display = 'none';
