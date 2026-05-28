@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Casos Activos — FundaLibertad A.C.</title>
+  <!-- TÍTULO DE PESTAÑA -->
+  <title>Casos Activos — La Libertad es un Derecho</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -14,16 +15,21 @@
   <header class="navbar">
     <div class="nav-inner">
       <a href="index.html" class="nav-brand">
+        <!-- LOGO: Pájaro con alas abiertas -->
+        <!-- Para usar imagen real: <img src="logo.png" style="width:38px;height:38px;"> -->
         <div class="nav-logo">
-          <svg viewBox="0 0 40 40" fill="none">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="20" cy="20" r="18" stroke="#B5D4F4" stroke-width="1.5"/>
-            <path d="M12 26 L20 10 L28 26" stroke="#B5D4F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M14.5 21 H25.5" stroke="#B5D4F4" stroke-width="1.5" stroke-linecap="round"/>
-            <rect x="17" y="26" width="6" height="3" rx="1" fill="#B5D4F4"/>
-            <circle cx="20" cy="7" r="2" fill="#378ADD"/>
+            <path d="M6 23 Q12 14 20 20" stroke="#B5D4F4" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <path d="M34 23 Q28 14 20 20" stroke="#B5D4F4" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <path d="M20 20 Q19.5 25 20 30" stroke="#378ADD" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="20" cy="16.5" r="2.8" fill="#378ADD"/>
+            <path d="M22 16 L24.5 15.5" stroke="#B5D4F4" stroke-width="1.2" stroke-linecap="round"/>
+            <circle cx="20" cy="7" r="1.5" fill="#378ADD" opacity="0.7"/>
           </svg>
         </div>
-        <span class="nav-name">FundaLibertad <em>A.C.</em></span>
+        <!-- NOMBRE NAVBAR -->
+        <span class="nav-name">La Libertad <em>es un Derecho</em></span>
       </a>
       <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
         <span></span><span></span><span></span>
@@ -37,7 +43,7 @@
     </div>
   </header>
 
-  <!-- Hero simple -->
+  <!-- HERO DE PÁGINA -->
   <div class="page-hero">
     <div class="container">
       <span class="section-tag">Transparencia ante todo</span>
@@ -46,28 +52,39 @@
     </div>
   </div>
 
-  <!-- CASOS COMPLETOS -->
   <section class="section">
     <div class="container">
 
-      <!-- CASO JUAN -->
+      <!-- ══════════════════════════════════════════════════════════════
+           CASO 1 — JUAN MANUEL
+           Para agregar foto real: reemplaza el SVG del avatar por:
+           <img src="fotos/juan.jpg" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
+           Para cambiar datos: edita nombre, descripción y montos abajo.
+      ══════════════════════════════════════════════════════════════ -->
       <div class="case-detail" id="juan">
+        <!-- COLOR DEL ENCABEZADO: cambia los colores del gradient si lo deseas -->
         <div class="case-detail-header" style="background: linear-gradient(135deg,#1a5ea8,#0C447C);">
+          <!-- AVATAR / FOTO DEL CASO -->
           <svg class="case-detail-avatar" viewBox="0 0 100 100" fill="none">
             <circle cx="50" cy="38" r="22" fill="rgba(255,255,255,0.9)"/>
             <ellipse cx="50" cy="90" rx="34" ry="22" fill="rgba(255,255,255,0.9)"/>
           </svg>
           <div class="case-detail-info">
+            <!-- TIPO DE CASO -->
             <span class="case-badge" style="margin-bottom:8px;">Prisión preventiva</span>
+            <!-- NOMBRE COMPLETO -->
             <h2>Juan Manuel Rodríguez</h2>
+            <!-- DATOS BÁSICOS -->
             <p>34 años · Ciudad de México · En prisión desde hace 18 meses</p>
           </div>
         </div>
         <div class="case-detail-body">
           <div class="case-detail-text">
+            <!-- DESCRIPCIÓN DETALLADA DEL CASO: edita los párrafos -->
             <h3>Situación jurídica</h3>
             <p>Juan Manuel fue detenido en octubre de 2022 acusado de un delito del que afirma ser inocente. Desde entonces permanece en prisión preventiva sin que se haya dictado una sentencia firme. Su expediente presenta múltiples irregularidades procesales y existe evidencia de que la detención no se realizó conforme a la ley.</p>
             <p>Su familia, de escasos recursos, no ha podido costear los honorarios de un abogado particular ni los trámites necesarios para interponer un recurso de apelación. El defensor de oficio asignado no ha dado seguimiento adecuado al caso.</p>
+            <!-- DESGLOSE DE FONDOS: edita concepto y monto de cada línea -->
             <h3 style="margin-top:1.2rem;">¿Para qué se usarán los fondos?</h3>
             <ul class="fund-list">
               <li>Honorarios de abogado penalista: $1,200</li>
@@ -78,12 +95,15 @@
           </div>
           <div class="case-detail-donate">
             <div class="donate-box">
+              <!-- PROGRESO: cambia el % (width:65%) y los montos -->
               <div class="progress-wrap" style="margin-bottom:1rem;">
                 <div class="progress-bar large"><div class="progress-fill" style="width:65%"></div></div>
                 <div class="progress-meta"><span>$1,300 recaudados</span><span><strong>Meta: $2,000</strong></span></div>
               </div>
               <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:1.2rem;">Selecciona un método de donación:</p>
+              <!-- BOTONES DE PAGO -->
               <div class="donate-methods">
+                <!-- PAYPAL: cambia el href por tu link real -->
                 <a href="https://paypal.me/fundalibertad?amount=50" target="_blank" class="method-btn">
                   <svg viewBox="0 0 20 20" fill="none" width="18"><rect width="20" height="20" rx="5" fill="#003087"/><path d="M12 4H8a.5.5 0 00-.5.43L6 13h2l.5-2.5H10c1.8 0 3-1 3.3-2.7.3-1.3-.3-3.8-1.3-3.8z" fill="#009CDE"/></svg>
                   PayPal
@@ -106,7 +126,10 @@
         </div>
       </div>
 
-      <!-- CASO MARÍA -->
+      <!-- ══════════════════════════════════════════════════════════════
+           CASO 2 — MARÍA LUISA
+           Mismas instrucciones que Caso 1 para editar foto y datos
+      ══════════════════════════════════════════════════════════════ -->
       <div class="case-detail" id="maria">
         <div class="case-detail-header" style="background: linear-gradient(135deg,#0F6E56,#085041);">
           <svg class="case-detail-avatar" viewBox="0 0 100 100" fill="none">
@@ -138,7 +161,7 @@
                 <div class="progress-bar large"><div class="progress-fill" style="width:30%; background:var(--green)"></div></div>
                 <div class="progress-meta"><span>$600 recaudados</span><span><strong>Meta: $2,000</strong></span></div>
               </div>
-              <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:1.2rem; color:#B22222; font-weight:500;">⚠ Urgente — solo 30% alcanzado</p>
+              <p style="font-size:0.85rem; color:#B22222; font-weight:500; margin-bottom:1.2rem;">⚠ Urgente — solo 30% alcanzado</p>
               <div class="donate-methods">
                 <a href="https://paypal.me/fundalibertad?amount=50" target="_blank" class="method-btn">PayPal</a>
                 <button class="method-btn" onclick="copyClabe()">Transferencia</button>
@@ -150,7 +173,10 @@
         </div>
       </div>
 
-      <!-- CASO CARLOS -->
+      <!-- ══════════════════════════════════════════════════════════════
+           CASO 3 — CARLOS ROBERTO
+           Mismas instrucciones que Caso 1 para editar foto y datos
+      ══════════════════════════════════════════════════════════════ -->
       <div class="case-detail" id="carlos">
         <div class="case-detail-header" style="background: linear-gradient(135deg,#534AB7,#26215C);">
           <svg class="case-detail-avatar" viewBox="0 0 100 100" fill="none">
@@ -194,6 +220,12 @@
         </div>
       </div>
 
+      <!-- ══════════════════════════════════════════════════════════════
+           PARA AGREGAR UN NUEVO CASO: copia el bloque <div class="case-detail">
+           de arriba, cambia el id (ej. id="nuevo"), y edita todos los datos.
+           Recuerda también agregar la tarjeta resumen en index.html
+      ══════════════════════════════════════════════════════════════ -->
+
     </div>
   </section>
 
@@ -203,13 +235,16 @@
         <div class="nav-logo" style="width:36px;height:36px;">
           <svg viewBox="0 0 40 40" fill="none">
             <circle cx="20" cy="20" r="18" stroke="#378ADD" stroke-width="1.5"/>
-            <path d="M12 26 L20 10 L28 26" stroke="#378ADD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M14.5 21 H25.5" stroke="#378ADD" stroke-width="1.5" stroke-linecap="round"/>
-            <rect x="17" y="26" width="6" height="3" rx="1" fill="#378ADD"/>
+            <path d="M6 23 Q12 14 20 20" stroke="#378ADD" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <path d="M34 23 Q28 14 20 20" stroke="#378ADD" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <path d="M20 20 Q19.5 25 20 30" stroke="#85B7EB" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="20" cy="16.5" r="2.8" fill="#85B7EB"/>
+            <path d="M22 16 L24.5 15.5" stroke="#378ADD" stroke-width="1.2" stroke-linecap="round"/>
+            <circle cx="20" cy="7" r="1.5" fill="#85B7EB" opacity="0.7"/>
           </svg>
         </div>
         <div>
-          <p class="footer-name">FundaLibertad A.C.</p>
+          <p class="footer-name">La Libertad es un Derecho</p>
           <p class="footer-slogan">Justicia para quienes no tienen voz</p>
         </div>
       </div>
@@ -218,7 +253,7 @@
         <a href="casos.html">Casos activos</a>
         <a href="contacto.html">Contacto</a>
       </div>
-      <p class="footer-copy">© 2025 FundaLibertad A.C. — Asociación Civil sin fines de lucro.</p>
+      <p class="footer-copy">© 2025 La Libertad es un Derecho — Asociación Civil sin fines de lucro.</p>
     </div>
   </footer>
 
@@ -232,6 +267,7 @@
       t.classList.add('show');
       setTimeout(() => t.classList.remove('show'), 2200);
     }
+    // ── DATOS DE PAGO: cambia estos valores por los reales ──
     function copyClabe() { navigator.clipboard.writeText('012180012345678901'); showToast(); }
     function copyBTC()   { navigator.clipboard.writeText('bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh'); showToast(); }
     function copyETH()   { navigator.clipboard.writeText('0x71C7656EC7ab88b098defB751B7401B5f6d8976F'); showToast(); }
