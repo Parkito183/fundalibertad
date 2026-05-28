@@ -74,7 +74,7 @@ ul { list-style: none; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 64px;
+  height: 90px;
 }
 
 .nav-brand {
@@ -887,7 +887,7 @@ ul { list-style: none; }
   .nav-links {
     display: none;
     position: absolute;
-    top: 64px;
+    top: 90px;
     left: 0; right: 0;
     background: var(--blue-darkest);
     flex-direction: column;
