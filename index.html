@@ -234,82 +234,44 @@
       </div>
       <div class="donate-grid">
 
-        <!-- ══════════════════════════════════════
-             MÉTODOS DE PAGO
-             Para PayPal: cambia el href por tu link real de PayPal
-             Para transferencia: cambia la CLABE en el JS al final
-             Para BTC/ETH: cambia las direcciones en el JS al final
-        ══════════════════════════════════════ -->
         <div class="donate-card">
           <div class="donate-icon paypal-icon">
-            <svg viewBox="0 0 40 40" fill="none">
-            <circle cx="20" cy="20" r="18" stroke="#378ADD" stroke-width="1.5"/>
-            <circle cx="20" cy="13" r="3.5" fill="#85B7EB"/>
-            <path d="M20 17 L20 28" stroke="#378ADD" stroke-width="2.5" stroke-linecap="round"/>
-            <path d="M20 21 L13 16 M20 21 L27 16" stroke="#378ADD" stroke-width="2.5" stroke-linecap="round"/>
-            <path d="M20 28 L15 35 M20 28 L25 35" stroke="#378ADD" stroke-width="2.5" stroke-linecap="round"/>
-            <circle cx="11" cy="10" r="1.8" fill="#85B7EB" opacity="0.75"/>
-            <circle cx="29" cy="10" r="1.8" fill="#85B7EB" opacity="0.75"/>
-          </svg>
+            <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#003087"/><path d="M25 12H18c-.5 0-1 .4-1 .9L14 27h3.5l.5-3.5h3.6c3 0 5.4-1.8 6-5 .5-2.2-.5-6-3.1-6.5z" fill="#009CDE"/><path d="M23 16.5H19.5l-.8 5h2.5l.3-1.8h2c1.8 0 3.1-1 3.5-3 .2-1.2-.4-2.5-3.5-.2z" fill="white"/></svg>
           </div>
           <h3>PayPal</h3>
-          <p>Donación rápida y segura con tu cuenta PayPal o tarjeta.</p>
+          <p>Donación rápida con tu cuenta PayPal o tarjeta de crédito/débito.</p>
           <!-- PAYPAL: Cambia el href por tu enlace real: https://paypal.me/TU-USUARIO -->
-          <a href="https://paypal.me/fundalibertad" target="_blank" class="btn-donate-sm">Donar con PayPal</a>
+          <a href="https://paypal.me/lalibertadesunderecho" target="_blank" class="btn-donate-sm">Donar con PayPal</a>
         </div>
 
         <div class="donate-card">
           <div class="donate-icon bank-icon">
-            <svg viewBox="0 0 40 40" fill="none">
-            <circle cx="20" cy="20" r="18" stroke="#378ADD" stroke-width="1.5"/>
-            <circle cx="20" cy="13" r="3.5" fill="#85B7EB"/>
-            <path d="M20 17 L20 28" stroke="#378ADD" stroke-width="2.5" stroke-linecap="round"/>
-            <path d="M20 21 L13 16 M20 21 L27 16" stroke="#378ADD" stroke-width="2.5" stroke-linecap="round"/>
-            <path d="M20 28 L15 35 M20 28 L25 35" stroke="#378ADD" stroke-width="2.5" stroke-linecap="round"/>
-            <circle cx="11" cy="10" r="1.8" fill="#85B7EB" opacity="0.75"/>
-            <circle cx="29" cy="10" r="1.8" fill="#85B7EB" opacity="0.75"/>
-          </svg>
+            <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#E6F1FB"/><path d="M8 18h24M20 10l12 8H8l12-8zM10 18v10M20 18v10M30 18v10M8 28h24" stroke="#185FA5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <h3>Transferencia bancaria</h3>
-          <!-- BANCO: Cambia banco, CLABE y titular. También actualiza la función copyClabe() al final -->
+          <!-- BANCO: Cambia banco, CLABE y titular -->
           <p>BBVA · CLABE: 012 180 0123456789 01<br/>Titular: La Libertad es un Derecho</p>
           <button class="btn-donate-sm" onclick="copyClabe()">Copiar CLABE</button>
         </div>
 
         <div class="donate-card">
-          <div class="donate-icon btc-icon">
-            <svg viewBox="0 0 40 40" fill="none">
-            <circle cx="20" cy="20" r="18" stroke="#378ADD" stroke-width="1.5"/>
-            <circle cx="20" cy="13" r="3.5" fill="#85B7EB"/>
-            <path d="M20 17 L20 28" stroke="#378ADD" stroke-width="2.5" stroke-linecap="round"/>
-            <path d="M20 21 L13 16 M20 21 L27 16" stroke="#378ADD" stroke-width="2.5" stroke-linecap="round"/>
-            <path d="M20 28 L15 35 M20 28 L25 35" stroke="#378ADD" stroke-width="2.5" stroke-linecap="round"/>
-            <circle cx="11" cy="10" r="1.8" fill="#85B7EB" opacity="0.75"/>
-            <circle cx="29" cy="10" r="1.8" fill="#85B7EB" opacity="0.75"/>
-          </svg>
+          <div class="donate-icon mp-icon">
+            <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#009EE3"/><circle cx="20" cy="17" r="9" fill="#FFE600"/><path d="M14.5 23 L14.5 11 L20 17.5 L25.5 11 L25.5 23" stroke="#009EE3" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M9 31 Q20 28 31 31" stroke="#FFE600" stroke-width="2.5" stroke-linecap="round" fill="none"/></svg>
           </div>
-          <h3>Bitcoin (BTC)</h3>
-          <!-- BTC: Cambia la dirección aquí y en la función copyBTC() al final -->
-          <p style="font-size:0.78rem; word-break:break-all; color:var(--text-muted);">bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh</p>
-          <button class="btn-donate-sm" onclick="copyBTC()">Copiar dirección BTC</button>
+          <h3>Mercado Pago</h3>
+          <p>Dona con tu cuenta Mercado Pago, tarjeta o efectivo en OXXO.</p>
+          <!-- MERCADO PAGO: Cambia el href por tu enlace real de Mercado Pago -->
+          <a href="https://link.mercadopago.com.mx/lalibertadesunderecho" target="_blank" class="btn-donate-sm">Donar con Mercado Pago</a>
         </div>
 
         <div class="donate-card">
-          <div class="donate-icon eth-icon">
-            <svg viewBox="0 0 40 40" fill="none">
-            <circle cx="20" cy="20" r="18" stroke="#378ADD" stroke-width="1.5"/>
-            <circle cx="20" cy="13" r="3.5" fill="#85B7EB"/>
-            <path d="M20 17 L20 28" stroke="#378ADD" stroke-width="2.5" stroke-linecap="round"/>
-            <path d="M20 21 L13 16 M20 21 L27 16" stroke="#378ADD" stroke-width="2.5" stroke-linecap="round"/>
-            <path d="M20 28 L15 35 M20 28 L25 35" stroke="#378ADD" stroke-width="2.5" stroke-linecap="round"/>
-            <circle cx="11" cy="10" r="1.8" fill="#85B7EB" opacity="0.75"/>
-            <circle cx="29" cy="10" r="1.8" fill="#85B7EB" opacity="0.75"/>
-          </svg>
+          <div class="donate-icon nu-icon">
+            <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#820AD1"/><path d="M9 29 L9 11 L19 29 L19 11" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M23 17 L23 25 Q23 30 28 30 Q33 30 33 25 L33 17" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
           </div>
-          <h3>Ethereum / USDT</h3>
-          <!-- ETH: Cambia la dirección aquí y en la función copyETH() al final -->
-          <p style="font-size:0.78rem; word-break:break-all; color:var(--text-muted);">0x71C7656EC7ab88b098defB751B7401B5f6d8976F</p>
-          <button class="btn-donate-sm" onclick="copyETH()">Copiar dirección ETH</button>
+          <h3>Nu Bank</h3>
+          <p>Transfiere desde tu cuenta Nu a nuestra CLABE interbancaria.</p>
+          <!-- NU BANK: Cambia la CLABE en la función copyNu() al final de la página -->
+          <button class="btn-donate-sm" onclick="copyNu()">Copiar CLABE Nu</button>
         </div>
 
       </div>
@@ -356,8 +318,8 @@
     // ── DATOS DE PAGO ──────────────────────────────────────────────────────
     // Cambia estos valores por los datos reales de la asociación
     function copyClabe() { navigator.clipboard.writeText('012180012345678901'); showToast(); }
-    function copyBTC()   { navigator.clipboard.writeText('bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh'); showToast(); }
-    function copyETH()   { navigator.clipboard.writeText('0x71C7656EC7ab88b098defB751B7401B5f6d8976F'); showToast(); }
+    function copyNu()    { navigator.clipboard.writeText('012180012345678902'); showToast(); }
+    
     // ──────────────────────────────────────────────────────────────────────
   </script>
 </body>
