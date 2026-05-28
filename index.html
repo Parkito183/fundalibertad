@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FundaLibertad A.C. — Justicia para quienes no tienen voz</title>
+  <title>La Libertad es un Derecho — Justicia para quienes no tienen voz</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -15,16 +15,21 @@
   <header class="navbar">
     <div class="nav-inner">
       <a href="index.html" class="nav-brand">
+        <!-- LOGO: Pájaro con alas abiertas (símbolo de libertad) -->
+        <!-- Para cambiar el logo, reemplaza el SVG de abajo por una etiqueta <img src="tu-logo.png"> -->
         <div class="nav-logo">
           <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="20" cy="20" r="18" stroke="#B5D4F4" stroke-width="1.5"/>
-            <path d="M12 26 L20 10 L28 26" stroke="#B5D4F4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M14.5 21 H25.5" stroke="#B5D4F4" stroke-width="1.5" stroke-linecap="round"/>
-            <rect x="17" y="26" width="6" height="3" rx="1" fill="#B5D4F4"/>
-            <circle cx="20" cy="7" r="2" fill="#378ADD"/>
+            <path d="M6 23 Q12 14 20 20" stroke="#B5D4F4" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <path d="M34 23 Q28 14 20 20" stroke="#B5D4F4" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <path d="M20 20 Q19.5 25 20 30" stroke="#378ADD" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="20" cy="16.5" r="2.8" fill="#378ADD"/>
+            <path d="M22 16 L24.5 15.5" stroke="#B5D4F4" stroke-width="1.2" stroke-linecap="round"/>
+            <circle cx="20" cy="7" r="1.5" fill="#378ADD" opacity="0.7"/>
           </svg>
         </div>
-        <span class="nav-name">FundaLibertad <em>A.C.</em></span>
+        <!-- NOMBRE DEL SITIO: Cambia el texto entre las etiquetas span -->
+        <span class="nav-name">La Libertad <em>es un Derecho</em></span>
       </a>
       <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
         <span></span><span></span><span></span>
@@ -44,14 +49,18 @@
       <div class="hero-grid"></div>
     </div>
     <div class="hero-content">
+      <!-- ETIQUETA SUPERIOR: Cambia este texto si lo necesitas -->
       <span class="hero-tag">Asociación Civil · Sin fines de lucro</span>
+      <!-- TÍTULO PRINCIPAL: Cambia este texto -->
       <h1 class="hero-title">Justicia para quienes<br/><span class="hero-accent">no tienen voz</span></h1>
+      <!-- DESCRIPCIÓN HERO: Cambia este párrafo -->
       <p class="hero-desc">Recaudamos fondos y brindamos representación legal gratuita a personas privadas de libertad que carecen de recursos económicos para enfrentar su proceso judicial. Cada donación puede cambiar una vida.</p>
       <div class="hero-actions">
         <a href="casos.html" class="btn-primary">Ver casos activos</a>
         <a href="contacto.html" class="btn-outline">Reportar un caso</a>
       </div>
     </div>
+    <!-- ESTADÍSTICAS: Cambia los números y etiquetas según la realidad -->
     <div class="hero-stats">
       <div class="stat-item">
         <span class="stat-number">47</span>
@@ -80,13 +89,15 @@
     <div class="container">
       <div class="about-grid">
         <div class="about-text">
+          <!-- SECCIÓN QUIÉNES SOMOS: Edita los textos de los párrafos -->
           <span class="section-tag">¿Quiénes somos?</span>
           <h2 class="section-title">Una causa que nace de la injusticia</h2>
           <p>En México y gran parte de Latinoamérica, miles de personas permanecen privadas de su libertad no porque sean culpables, sino porque no cuentan con los recursos económicos necesarios para costear un abogado, pagar una fianza o simplemente llevar a cabo su proceso legal de manera adecuada.</p>
-          <p>FundaLibertad A.C. nació en 2019 con una misión clara: que el dinero no sea el obstáculo entre una persona y su libertad. A través de la recaudación de fondos, la vinculación con abogados voluntarios y la presión ciudadana, iniciamos y acompañamos procesos legales hasta lograr la liberación o el juicio justo que cada persona merece.</p>
+          <p>La Libertad es un Derecho nació en 2019 con una misión clara: que el dinero no sea el obstáculo entre una persona y su libertad. A través de la recaudación de fondos, la vinculación con abogados voluntarios y la presión ciudadana, iniciamos y acompañamos procesos legales hasta lograr la liberación o el juicio justo que cada persona merece.</p>
           <a href="contacto.html" class="btn-primary" style="margin-top:1.2rem; display:inline-block;">Ponerse en contacto</a>
         </div>
         <div class="about-visual">
+          <!-- TARJETAS DE CARACTERÍSTICAS: Edita título y descripción de cada una -->
           <div class="about-card">
             <div class="about-icon">
               <svg viewBox="0 0 48 48" fill="none">
@@ -136,22 +147,33 @@
       </div>
       <div class="cases-grid">
 
-        <!-- Caso 1 -->
+        <!-- ══════════════════════════════════════════════════════════
+             CASO 1 — Para agregar foto real: cambia el SVG del avatar
+             por: <img src="fotos/nombre-foto.jpg" class="case-photo">
+             y en style.css agrega: .case-photo { width:100%; height:140px; object-fit:cover; }
+             Para cambiar nombre, edad, situación y progreso:
+             edita los campos marcados con los comentarios abajo.
+        ═══════════════════════════════════════════════════════════ -->
         <div class="case-card">
           <div class="case-img" style="background: linear-gradient(135deg,#B5D4F4,#378ADD);">
+            <!-- FOTO DEL CASO: reemplaza el SVG por <img src="fotos/juan.jpg" style="width:100%;height:100%;object-fit:cover;"> -->
             <svg class="case-avatar" viewBox="0 0 80 80" fill="none">
               <circle cx="40" cy="30" r="16" fill="rgba(255,255,255,0.9)"/>
               <ellipse cx="40" cy="70" rx="24" ry="16" fill="rgba(255,255,255,0.9)"/>
             </svg>
+            <!-- TIPO DE CASO: ej. "Prisión preventiva", "Amparo", "Apelación" -->
             <span class="case-badge">Prisión preventiva</span>
           </div>
           <div class="case-body">
             <div class="case-meta">
+              <!-- NOMBRE Y DATOS: Cambia nombre, edad y ciudad -->
               <strong>Juan Manuel R.</strong>
               <span>34 años · CDMX</span>
             </div>
+            <!-- DESCRIPCIÓN BREVE DEL CASO -->
             <p class="case-desc-text">Detenido hace 18 meses sin sentencia firme. Acusado sin pruebas suficientes. Su familia no puede costear el proceso de apelación.</p>
             <div class="progress-wrap">
+              <!-- BARRA DE PROGRESO: cambia el % en style="width:65%" y los montos abajo -->
               <div class="progress-bar"><div class="progress-fill" style="width:65%"></div></div>
               <div class="progress-meta"><span>$1,300 recaudados</span><span>Meta: $2,000</span></div>
             </div>
@@ -159,7 +181,7 @@
           </div>
         </div>
 
-        <!-- Caso 2 -->
+        <!-- CASO 2 -->
         <div class="case-card">
           <div class="case-img" style="background: linear-gradient(135deg,#9FE1CB,#0F6E56);">
             <svg class="case-avatar" viewBox="0 0 80 80" fill="none">
@@ -182,7 +204,7 @@
           </div>
         </div>
 
-        <!-- Caso 3 -->
+        <!-- CASO 3 -->
         <div class="case-card">
           <div class="case-img" style="background: linear-gradient(135deg,#CECBF6,#534AB7);">
             <svg class="case-avatar" viewBox="0 0 80 80" fill="none">
@@ -222,12 +244,19 @@
       </div>
       <div class="donate-grid">
 
+        <!-- ══════════════════════════════════════
+             MÉTODOS DE PAGO
+             Para PayPal: cambia el href por tu link real de PayPal
+             Para transferencia: cambia la CLABE en el JS al final
+             Para BTC/ETH: cambia las direcciones en el JS al final
+        ══════════════════════════════════════ -->
         <div class="donate-card">
           <div class="donate-icon paypal-icon">
             <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#003087"/><path d="M25.5 12H17a1 1 0 00-1 .85L13.5 27h3.5l.7-4.5h3.8c3.2 0 5.5-1.6 6.2-4.8.5-2.3-.5-5.7-2.2-5.7z" fill="#009CDE"/><path d="M23 15.5H18l-1 6.5h2.8l.3-2h1.9c2.2 0 3.7-1.1 4.1-3.1.4-1.5-.4-3.7-3.1-1.4z" fill="#fff"/></svg>
           </div>
           <h3>PayPal</h3>
           <p>Donación rápida y segura con tu cuenta PayPal o tarjeta.</p>
+          <!-- PAYPAL: Cambia el href por tu enlace real: https://paypal.me/TU-USUARIO -->
           <a href="https://paypal.me/fundalibertad" target="_blank" class="btn-donate-sm">Donar con PayPal</a>
         </div>
 
@@ -236,7 +265,8 @@
             <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#E6F1FB"/><path d="M8 18h24M20 10l12 8H8l12-8zM10 18v10M20 18v10M30 18v10M8 28h24" stroke="#185FA5" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
           <h3>Transferencia bancaria</h3>
-          <p>BBVA · CLABE: 012 180 0123456789 01<br/>Titular: FundaLibertad A.C.</p>
+          <!-- BANCO: Cambia banco, CLABE y titular. También actualiza la función copyClabe() al final -->
+          <p>BBVA · CLABE: 012 180 0123456789 01<br/>Titular: La Libertad es un Derecho</p>
           <button class="btn-donate-sm" onclick="copyClabe()">Copiar CLABE</button>
         </div>
 
@@ -245,6 +275,7 @@
             <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#F7931A" fill-opacity="0.12"/><path d="M22 10c3 .5 5 2 4.5 5-.2 2-1.5 3-3 3.5 2 .5 3.5 2 3 5-.7 3.5-3.5 4.5-7 4.5H13L16 10h6z" stroke="#F7931A" stroke-width="1.8" stroke-linejoin="round"/><path d="M18 14h3M17.5 21h3.5M17 27h3" stroke="#F7931A" stroke-width="1.5" stroke-linecap="round"/></svg>
           </div>
           <h3>Bitcoin (BTC)</h3>
+          <!-- BTC: Cambia la dirección aquí y en la función copyBTC() al final -->
           <p style="font-size:0.78rem; word-break:break-all; color:var(--text-muted);">bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh</p>
           <button class="btn-donate-sm" onclick="copyBTC()">Copiar dirección BTC</button>
         </div>
@@ -254,6 +285,7 @@
             <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="10" fill="#627EEA" fill-opacity="0.12"/><path d="M20 8 L28 21 L20 25 L12 21 Z" stroke="#627EEA" stroke-width="1.8" stroke-linejoin="round"/><path d="M20 25 L28 21 L20 32 L12 21 Z" stroke="#627EEA" stroke-width="1.8" stroke-linejoin="round"/></svg>
           </div>
           <h3>Ethereum / USDT</h3>
+          <!-- ETH: Cambia la dirección aquí y en la función copyETH() al final -->
           <p style="font-size:0.78rem; word-break:break-all; color:var(--text-muted);">0x71C7656EC7ab88b098defB751B7401B5f6d8976F</p>
           <button class="btn-donate-sm" onclick="copyETH()">Copiar dirección ETH</button>
         </div>
@@ -266,16 +298,22 @@
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-brand">
+        <!-- LOGO FOOTER: mismo pájaro, colores ligeramente distintos para el fondo oscuro -->
         <div class="nav-logo" style="width:36px;height:36px;">
           <svg viewBox="0 0 40 40" fill="none">
             <circle cx="20" cy="20" r="18" stroke="#378ADD" stroke-width="1.5"/>
-            <path d="M12 26 L20 10 L28 26" stroke="#378ADD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M14.5 21 H25.5" stroke="#378ADD" stroke-width="1.5" stroke-linecap="round"/>
-            <rect x="17" y="26" width="6" height="3" rx="1" fill="#378ADD"/>
+            <path d="M6 23 Q12 14 20 20" stroke="#378ADD" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <path d="M34 23 Q28 14 20 20" stroke="#378ADD" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+            <path d="M20 20 Q19.5 25 20 30" stroke="#85B7EB" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="20" cy="16.5" r="2.8" fill="#85B7EB"/>
+            <path d="M22 16 L24.5 15.5" stroke="#378ADD" stroke-width="1.2" stroke-linecap="round"/>
+            <circle cx="20" cy="7" r="1.5" fill="#85B7EB" opacity="0.7"/>
           </svg>
         </div>
         <div>
-          <p class="footer-name">FundaLibertad A.C.</p>
+          <!-- NOMBRE EN FOOTER: cambia si el nombre oficial cambia -->
+          <p class="footer-name">La Libertad es un Derecho</p>
+          <!-- SLOGAN: cambia el texto aquí -->
           <p class="footer-slogan">Justicia para quienes no tienen voz</p>
         </div>
       </div>
@@ -284,14 +322,16 @@
         <a href="casos.html">Casos activos</a>
         <a href="contacto.html">Contacto</a>
       </div>
-      <p class="footer-copy">© 2025 FundaLibertad A.C. — Asociación Civil sin fines de lucro. Todos los derechos reservados.</p>
+      <!-- COPYRIGHT: actualiza el año si es necesario -->
+      <p class="footer-copy">© 2025 La Libertad es un Derecho — Asociación Civil sin fines de lucro. Todos los derechos reservados.</p>
     </div>
   </footer>
 
-  <!-- Toast -->
+  <!-- Toast de confirmación al copiar -->
   <div class="toast" id="toast">¡Copiado al portapapeles!</div>
 
   <script>
+    // Menú hamburguesa para móvil
     const toggle = document.getElementById('navToggle');
     const links  = document.getElementById('navLinks');
     toggle.addEventListener('click', () => links.classList.toggle('open'));
@@ -301,9 +341,12 @@
       t.classList.add('show');
       setTimeout(() => t.classList.remove('show'), 2200);
     }
+    // ── DATOS DE PAGO ──────────────────────────────────────────────────────
+    // Cambia estos valores por los datos reales de la asociación
     function copyClabe() { navigator.clipboard.writeText('012180012345678901'); showToast(); }
     function copyBTC()   { navigator.clipboard.writeText('bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh'); showToast(); }
     function copyETH()   { navigator.clipboard.writeText('0x71C7656EC7ab88b098defB751B7401B5f6d8976F'); showToast(); }
+    // ──────────────────────────────────────────────────────────────────────
   </script>
 </body>
 </html>
