@@ -102,13 +102,13 @@
                   <svg viewBox="0 0 20 20" fill="none" width="18"><rect width="20" height="20" rx="5" fill="#E6F1FB"/><path d="M4 9h12M10 5l6 4H4l6-4zM5 9v5M10 9v5M15 9v5M4 14h12" stroke="#185FA5" stroke-width="1.2" stroke-linecap="round"/></svg>
                   Transferencia
                 </button>
-                <button class="method-btn" onclick="copyBTC()">
-                  <svg viewBox="0 0 20 20" fill="none" width="18"><rect width="20" height="20" rx="5" fill="#FFF3E0"/><path d="M11 5c1.5.3 2.5 1 2.3 2.5-.1 1-.8 1.5-1.5 1.8 1 .2 1.8 1 1.5 2.5-.4 1.7-1.8 2.2-3.5 2.2H6.5L8 5h3z" stroke="#F7931A" stroke-width="1" stroke-linejoin="round"/></svg>
-                  Bitcoin
-                </button>
-                <button class="method-btn" onclick="copyETH()">
-                  <svg viewBox="0 0 20 20" fill="none" width="18"><rect width="20" height="20" rx="5" fill="#EEF0FF"/><path d="M10 4L14 10.5L10 12.5L6 10.5Z" stroke="#627EEA" stroke-width="1.2" stroke-linejoin="round"/><path d="M10 12.5L14 10.5L10 16L6 10.5Z" stroke="#627EEA" stroke-width="1.2" stroke-linejoin="round"/></svg>
-                  ETH / USDT
+                <a href="https://link.mercadopago.com.mx/lalibertadesunderecho" target="_blank" class="method-btn">
+                  <svg viewBox="0 0 20 20" fill="none" width="18"><rect width="20" height="20" rx="5" fill="#009EE3"/><circle cx="10" cy="9" r="4.5" fill="#FFE600"/><path d="M7 12.5 L7 5.5 L10 9 L13 5.5 L13 12.5" stroke="#009EE3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                  Mercado Pago
+                </a>
+                <button class="method-btn" onclick="copyNu()">
+                  <svg viewBox="0 0 20 20" fill="none" width="18"><rect width="20" height="20" rx="5" fill="#820AD1"/><path d="M4 15.5 L4 4.5 L9.5 15.5 L9.5 4.5" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M12.5 7 L12.5 13 Q12.5 16 15.5 16 Q18.5 16 18.5 13 L18.5 7" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+                  Nu Bank
                 </button>
               </div>
             </div>
@@ -155,8 +155,8 @@
               <div class="donate-methods">
                 <a href="https://paypal.me/fundalibertad?amount=50" target="_blank" class="method-btn">PayPal</a>
                 <button class="method-btn" onclick="copyClabe()">Transferencia</button>
-                <button class="method-btn" onclick="copyBTC()">Bitcoin</button>
-                <button class="method-btn" onclick="copyETH()">ETH / USDT</button>
+                <a href="https://link.mercadopago.com.mx/lalibertadesunderecho" target="_blank" class="method-btn">Mercado Pago</a>
+                <button class="method-btn" onclick="copyNu()">Nu Bank</button>
               </div>
             </div>
           </div>
@@ -202,8 +202,8 @@
               <div class="donate-methods">
                 <a href="https://paypal.me/fundalibertad?amount=50" target="_blank" class="method-btn">PayPal</a>
                 <button class="method-btn" onclick="copyClabe()">Transferencia</button>
-                <button class="method-btn" onclick="copyBTC()">Bitcoin</button>
-                <button class="method-btn" onclick="copyETH()">ETH / USDT</button>
+                <a href="https://link.mercadopago.com.mx/lalibertadesunderecho" target="_blank" class="method-btn">Mercado Pago</a>
+                <button class="method-btn" onclick="copyNu()">Nu Bank</button>
               </div>
             </div>
           </div>
@@ -249,8 +249,8 @@
     }
     // ── DATOS DE PAGO: cambia estos valores por los reales ──
     function copyClabe() { navigator.clipboard.writeText('012180012345678901'); showToast(); }
-    function copyBTC()   { navigator.clipboard.writeText('bc1qxy2kgdygjrsqtzq2n0yrf2493p83kkfjhx0wlh'); showToast(); }
-    function copyETH()   { navigator.clipboard.writeText('0x71C7656EC7ab88b098defB751B7401B5f6d8976F'); showToast(); }
+    function copyNu()    { navigator.clipboard.writeText('012180012345678902'); showToast(); }
+    
   </script>
 </body>
 </html>
